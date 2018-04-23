@@ -1,0 +1,31 @@
+﻿<Window x:Class="dxSample_InstanceFeedbackMode.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525"
+        xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+        xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+        dx:ThemeManager.ThemeName="Office2007Black">
+    <Grid>
+        <dx:EntityInstantFeedbackDataSource Name="entitySource" KeyExpression="ProductID" />
+        <dxg:GridControl Name="grid" ItemsSource="{Binding ElementName=entitySource, Path=Data}">
+            <dxg:GridControl.Columns>
+                <dxg:GridColumn FieldName="ProductName"/>
+                <dxg:GridColumn FieldName="UnitPrice">
+                    <dxg:GridColumn.EditSettings>
+                        <dxe:SpinEditSettings MaskType="Numeric" Mask="c2"
+                                              MaskUseAsDisplayFormat="True" />
+                    </dxg:GridColumn.EditSettings>
+                </dxg:GridColumn>
+                <dxg:GridColumn FieldName="UnitsInStock"/>
+                <dxg:GridColumn FieldName="UnitsOnOrder"/>
+                <dxg:GridColumn FieldName="ReorderLevel"/>
+                <dxg:GridColumn FieldName="Discontinued"/>
+            </dxg:GridControl.Columns>
+            <dxg:GridControl.View>
+                <dxg:TableView Name="tableView1" AutoWidth="True"
+                               RowAnimationKind="Opacity" />
+            </dxg:GridControl.View>
+        </dxg:GridControl>
+    </Grid>
+</Window>
