@@ -1,7 +1,7 @@
 <!-- default file list -->
 *Files to look at*:
 
-* **[MainWindow.xaml](./CS/dxSample-InstanceFeedbackMode/MainWindow.xaml) (VB: [MainWindow.xaml.vb](./VB/dxSample-InstanceFeedbackMode/MainWindow.xaml.vb))**
+* **[MainWindow.xaml](./CS/dxSample-InstanceFeedbackMode/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/dxSample-InstanceFeedbackMode/MainWindow.xaml))**
 * [MainWindow.xaml.cs](./CS/dxSample-InstanceFeedbackMode/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/dxSample-InstanceFeedbackMode/MainWindow.xaml.vb))
 <!-- default file list end -->
 # How to: Activate the Instant Feedback Mode for the Grid Bound to an Entity Framework model
