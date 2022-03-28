@@ -12,7 +12,7 @@
 # OBSOLETE - How to: Activate the Instant Feedback Mode for the Grid Bound to an Entity Framework model
 
 
-<p>This example is obsolete. Refer to the following example: Bind the WPF Data Grid to Data [Bind the WPF Data Grid to Data](https://github.com/DevExpress-Examples/how-to-bind-wpf-grid-to-data).</p>
+This example is obsolete. Refer to the following example: [Bind the WPF Data Grid to Data](https://github.com/DevExpress-Examples/how-to-bind-wpf-grid-to-data).
 
 <br/>
 
